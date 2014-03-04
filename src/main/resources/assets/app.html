@@ -1,0 +1,15 @@
+<form ng-submit="addAlert()" name="AlertForm">
+  Alert me when 
+  <select>
+    <option ng-repeat="exchange in exchanges" value="{{exchange.symbol}}">{{exchange.display}}</option>
+  </select>
+  is 
+  <select ng-model="direction">
+    <option value="gt">above</option>
+    <option value="lt">below</option>
+  </select>
+  <input type="text" ng-model="price" placeholder="$0.00"></input>
+  <br/>
+  <input type="text" ng-model="phoneNum" placeholder="telephone number"></input>
+  <input class="btn-primary" type="submit" value="Alert Me!"></input>
+</form>

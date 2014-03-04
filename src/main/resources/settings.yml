@@ -1,0 +1,5 @@
+http:
+  rootPath: /services/*
+  
+dbHostName: localhost:27017
+dbName: alertme
